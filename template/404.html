@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{title}</title>
+    <link rel="stylesheet" type="text/css" href="./static/semantic.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./static/main.css"/>
+    <script rel="text/javascript" src="./static/jquery-2.1.4.min.js"></script>
+    <script rel="text/javascript" src="./static/semantic.min.js"></script>
+</head>
+
+
+<body id="middle">
+
+<div class="ui middle aligned center aligned grid">
+    <div class="column">
+        <div class="masthead error segment centered">
+            <div class="container">
+                <h1 class="ui dividing header">
+                    That happens not to be a page
+                </h1>
+
+                <p>Rewind and try another one</p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    setTimeout("window.location.href='{redirect}';", 1000);
+</script>
+</body>
+</html>

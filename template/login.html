@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+    <title>Bitter - Login</title>
+    <link rel="stylesheet" type="text/css" href="./static/semantic.min.css"/>
+    <link rel="stylesheet" type="text/css" href="./static/main.css"/>
+    <script rel="text/javascript" src="./static/jquery-2.1.4.min.js"></script>
+    <script rel="text/javascript" src="./static/semantic.min.js"></script>
+</head>
+<body id="middle">
+
+<div class="ui middle aligned center aligned grid">
+  <div class="column">
+    <h2 class="ui header teal">
+      <div class="content">
+        Log-in to your account
+      </div>
+    </h2>
+    <form class="ui large form" action="?url=loginform" method="post">
+      <div class="ui stacked segment">
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="user icon"></i>
+            <input type="text" name="username" placeholder="Username">
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui left icon input">
+            <i class="lock icon"></i>
+            <input type="password" name="password" placeholder="Password">
+          </div>
+        </div>
+          <input type="submit" value="Submit" class="ui fluid large teal submit button" />
+      </div>
+
+      {error}
+
+    </form>
+
+    <div class="ui message">
+      New to us? <a href="?url=reg">Sign Up</a>
+    </div>
+    <div class="ui message">
+      Forget Password? <a href="?url=forgetpwd">Reset Password</a>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
+

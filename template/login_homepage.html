@@ -1,0 +1,72 @@
+<div class="ui grid" id="container">
+    <div class="sixteen wide column">
+        <form class="ui form" action="?url=addbleat" method="post" id="bleat">
+            <div class="ui grid">
+                <div class="thirteen wide column left floated">
+                    <div class="ui field">
+                        <textarea rows="2" name="bleat" form="bleat"></textarea>
+                    </div>
+                </div>
+                <div class="three wide column right floated center aligned middle aligned">
+                    <input type="submit" value="Submit Bleat" class="ui submit button"/>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+    <div class="ui raised segment six wide column left floated centered aligned" id="user_info">
+        <img class="ui small circular image centered aligned" src="{profile_img}">
+
+        <div class="ui grid center aligned">
+            <div class="two column row">
+                <div class="row">
+                    <h1 class="ui header left floated"><a
+                            href="?url=userinfo&user={username}">{username}</a>
+                    </h1>
+                </div>
+
+                {listen_html}
+            </div>
+        </div>
+        <table class="ui red table">
+            <thead>
+            <tr>
+                <th><a href="?url=bleats&user={username}">Bleats</a></th>
+                <th><a href="?url=listens&user={username}">Listens</a></th>
+                <th><a href="?url=followers&user={username}">Followers</a></th>
+            </tr>
+
+        </table>
+        <div class="ui divider"></div>
+        <table class="ui definition table">
+            <tbody>
+            <tr>
+                <td>Username</td>
+                <td>{username}</td>
+            </tr>
+            <tr>
+                <td>Full Name</td>
+                <td>{full_name}</td>
+            </tr>
+            <tr>
+                <td>Home Latitude</td>
+                <td>{home_latitude}</td>
+            </tr>
+            <tr>
+                <td>Home Suburb</td>
+                <td>{home_suburb}</td>
+            </tr>
+
+            </tbody>
+        </table>
+        <div class="ui piled segment">
+            <h4 class="ui header">Description</h4>
+            {detail}
+        </div>
+    </div>
+
+    <div class="ui raised segment nine wide column right floated" id="bleats">
+        {content_html}
+    </div>
+</div>

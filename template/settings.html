@@ -1,0 +1,105 @@
+<div class="ui grid center aligned" id="container">
+    <div class="column">
+        <h2 class="ui header teal">
+            <div class="content">
+                Account Settings
+            </div>
+        </h2>
+        <form class="ui large form" action="?url=settingform" method="post">
+            <div class="ui stacked segment">
+                <div class="disabled field">
+                    <div class="ui left icon input">
+                        <i class="mail icon"></i>
+                        <input type="text" disabled="" placeholder="{email}">
+                    </div>
+                </div>
+                <div class="disabled field">
+                    <div class="ui left icon input">
+                        <i class="user icon"></i>
+                        <input type="text" disabled="" placeholder="{username}">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="lock icon"></i>
+                        <input type="password" name="password" placeholder="Password">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="angle right icon"></i>
+                        <input type="text" name="full_name" placeholder="Full Name">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="angle right icon"></i>
+                        <input type="text" name="home_latitude" placeholder="Home Latitude">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="angle right icon"></i>
+                        <input type="text" name="home_suburb" placeholder="Home Suburb">
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="ui left icon input">
+                        <i class="angle right icon"></i>
+                        <input type="text" name="detail" placeholder="Detail">
+                    </div>
+                </div>
+
+                <input type="submit" value="Submit" class="ui fluid large teal submit button"/>
+            </div>
+
+        </form>
+
+        <div class="ui horizontal segments">
+            <div class="ui segment">
+                <form class="ui large form" action="?url=changepic" method="post" enctype="multipart/form-data">
+
+                    <h2 class="ui header">Change Avatar</h2>
+                    <div class="field">
+                        <input type="file" name="pic" accept="image/jpeg">
+                    </div>
+                    <input type="submit" value="Change Avatar" class="ui fluid large teal submit button"/>
+                </form>
+                <div class="ui divider"></div>
+                <form class="ui large form" action="?url=deletepic" method="post">
+                    <input type="submit" value="Delete Avatar" class="ui fluid large teal submit button"/>
+                </form>
+                <div class="ui divider"></div>
+                <form class="ui large form" action="?url=suspendaccount" method="post">
+                    <input type="submit" value="Suspend Account" class="ui fluid large teal submit button"/>
+                </form>
+            </div>
+            <div class="ui segment">
+                <form class="ui large form" action="?url=unsuspendaccount" method="post">
+                    <input type="submit" value="Unsuspend Account" class="ui fluid large teal submit button"/>
+                </form>
+                <div class="ui divider"></div>
+                <form class="ui large form" action="?url=deleteaccount" method="post">
+                    <input type="submit" value="Delete Account" class="ui fluid large teal submit button"/>
+                </form>
+                <div class="ui divider"></div>
+                <form class="ui large form" action="?url=enablenotification" method="post">
+                    <input type="submit" value="Enable Notification" class="ui fluid large teal submit button"/>
+               </form>
+               <div class="ui divider"></div>
+                <form class="ui large form" action="?url=disablenotification" method="post">
+                    <input type="submit" value="Disable Notification" class="ui fluid large teal submit button"/>
+               </form>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+        {error}
+    </div>
+</div>

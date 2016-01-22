@@ -1,0 +1,28 @@
+#container {
+    width: 1000px;
+    margin: auto;
+}
+
+#bleats {
+    margin: 10px 10px;
+}
+
+#user_info {
+    margin: 10px 10px;
+}
+
+#middle {
+    background-color: #DADADA;
+}
+
+#middle  .grid {
+    height: 100%;
+}
+
+#middle .image {
+    margin-top: -100px;
+}
+
+#middle .column {
+    max-width: 450px;
+}
